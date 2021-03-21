@@ -60,13 +60,21 @@ const sqlite3 = require('sqlite3');
 const database = new sqlite3.Database('./db/db.sqlite3', (err) => {
     if (err)  throw new Error(err);
 });
-//db file tu root ar pora link korbya lagnu aru production ar babe tolor commment tu bohaba lagbu
+//for produnction change the database link to --->
 // path.join(__dirname, '../../extraResources/db.sqlite3')
-// './public/db.sqlite3'
+database.serialize(()=>{
+    database.run("PRAGMA cipher_compatibility = 4");
+    database.run("PRAGMA key = 'sernstack'");
+})
 
 ipcMain.on('asynchronous-message', async (event, arg) => {
-
+if(arg === "sendData"){
+  const query = "SELECT * FROM todo"
+  database.all(query,(err,rows)=>{
+    event.reply("asynchronous-reply", (err && err.message) || rows);
+  })
 }
+
 
 
 
