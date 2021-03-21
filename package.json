@@ -1,5 +1,5 @@
 {
-  "name": "Tacsol",
+  "name": "sern-stack",
   "version": "2.2.0",
   "private": true,
   "homepage": "./",
@@ -77,8 +77,8 @@
     "url": "https://gharnetwork.com"
   },
   "build": {
-    "appId": "com.tacsol.thriftandcredit",
-    "productName": "Tacsol",
+    "appId": "com.test.sern-stack",
+    "productName": "sern-stack",
     "copyright": "Copyright © 2021 ${author}",
     "mac": {
       "category": "public.app-category.utilities"
