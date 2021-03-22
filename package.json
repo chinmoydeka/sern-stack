@@ -1,36 +1,22 @@
 {
   "name": "sern-stack",
-  "version": "2.2.0",
-  "private": true,
+  "version": "2.2.1",
+  "private": false,
   "homepage": "./",
   "dependencies": {
-    "@date-io/date-fns": "^1.3.13",
-    "@david.kucsai/react-pdf-table": "^0.3.0",
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "@material-ui/pickers": "^3.2.10",
-    "@react-pdf/renderer": "^1.6.12",
+   
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "archiver-zip-encryptable": "^1.0.7",
-    "archiver-zip-encrypted": "^1.0.8",
     "aws-sdk": "^2.814.0",
     "bluebird": "^3.7.2",
-    "browser-image-compression": "^1.0.13",
     "date-fns": "^2.16.1",
     "electron-is-dev": "^1.2.0",
-    "keytar": "^7.4.0",
-    "material-ui-icons": "^1.0.0-beta.36",
     "node-pre-gyp": "^0.17.0",
     "react": "^17.0.1",
-    "react-detect-offline": "^2.4.3",
     "react-dom": "^17.0.1",
-    "react-json-parser": "^0.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "reactjs-popup": "^2.0.4",
     "sqlite3": "^5.0.0",
     "typescript": "^4.1.3",
     "web-vitals": "^0.2.4"
@@ -71,11 +57,7 @@
     "electron-builder": "^22.9.1",
     "wait-on": "^5.2.1"
   },
-  "author": {
-    "name": "chinmoy deka",
-    "email": "chinmoydeka556@gmail.com",
-    "url": "https://gharnetwork.com"
-  },
+  "author": "chinmoy deka <chinmoydeka556@gmail.com> (https://gharnetwork.com), Nitul Deka <dekanitul92@gmail.com>",
   "build": {
     "appId": "com.test.sern-stack",
     "productName": "sern-stack",
@@ -110,5 +92,17 @@
     "directories": {
       "buildResources": "assets"
     }
+  },
+  "description": "Sern stack is basically a javascript stack. You can develop a advanced desktop application with javascript.\r   SERN stands for -\r   * S - Node sqlite3\r   * E - Electron js\r   * R - React\r   * N - Node js\r # Installation\r      ```\r      npm i sern-stack\r      ```\r  ###  Starting development enviroment\r       ```\r       npm run electron-dev\r       ```\r # Usages\r   - For modify code go to src directory then edit app.js file with your code editor.\r   - For navigation or route you can use react router\r   - To connect with sqlite database\r     >Frontend\r     ```\r     import React, {useState,useEffect} from 'react';\r     import sendAsync from './renderer.js'",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinmoydeka/SERN-STACK.git"
+  },
+  "keywords": [
+    "sern-stack"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinmoydeka/SERN-STACK/issues"
   }
 }
