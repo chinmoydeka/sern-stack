@@ -1,14 +1,19 @@
 # SERN STACK
   Sern stack is basically a javascript stack. You can develop a advanced desktop application with javascript.
   SERN stands for -
-  * S - Node sqlite3
+  * S - sqlite3
   * E - Electron js
   * R - React
   * N - Node js
 # Installation
+    > Clone this repo by
      ```
-     npm i sern-stack
+     git clone https://github.com/chinmoydeka/sern-stack.git
      ```
+    >After cloning 
+    ```
+    npm install
+    ```
  ###  Starting development enviroment
       ```
       npm run electron-dev
